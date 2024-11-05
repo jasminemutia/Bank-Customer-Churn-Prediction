@@ -51,4 +51,5 @@ Key features identified as influential in predicting customer churn include:
 - Age: Older customers tended to have a higher likelihood of churning.
 - Balance: Higher balances correlated with lower churn rates.
 - CreditScore: A lower credit score was often associated with a higher chance of exiting.
+
 Using these important features, the model was fine-tuned to improve accuracy and AUC-ROC scores, providing valuable insights for the bank to target retention efforts effectively.
