@@ -45,6 +45,7 @@ Additionally, AUC-ROC (Area Under the Receiver Operating Characteristic curve) w
 Based on the accuracy scores, LGBM Classifier emerged as the best model with an accuracy of 86%, outperforming the other models. Additionally, LGBM Classifier achieved high recall and precision:
 - Recall: 86%
 - Precision: 85.74%
+
 With its high accuracy, recall, and precision, the LGBM Classifier demonstrates the most robust performance, making it the optimal choice for predicting customer churn in this dataset.
 
 ## Feature Importance
