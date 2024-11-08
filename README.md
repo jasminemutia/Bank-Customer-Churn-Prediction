@@ -34,17 +34,18 @@ This split provides a reliable basis for comparing models and understanding how 
 
 ## Modeling 
 To predict customer churn, I used the following machine learning models, each with unique characteristics for handling binary classification tasks:
-1. Logistic Regression: This linear model is commonly used as a baseline due to its simplicity and interpretability. It establishes a benchmark for other models, offering insights into the relationships between customer features and churn probability.
-2. Random Forest Classifier: This ensemble model constructs multiple decision trees and averages their predictions, reducing overfitting while capturing complex patterns in the data. It works well with both numerical and categorical data, making it effective for this task.
-3. Gaussian Naive Bayes: Based on Bayes’ theorem, this model assumes independence among predictors and is particularly efficient with categorical data. Although it simplifies the problem by assuming Gaussian distribution for continuous features, it often performs well in baseline comparisons.
-4. LightGBM Classifier: A gradient boosting framework that uses tree-based learning algorithms, LightGBM is optimized for speed and performance. It handles large datasets efficiently and provides high accuracy by iteratively building models that correct previous errors.
+1. Logistic Regression: Baseline model with 72.5% accuracy.
+2. Gaussian Naive Bayes: Performed slightly better with 73.75% accuracy.
+3. Random Forest: Achieved 83.45% accuracy, good at handling both categorical and numerical data.
+4. LGBM Classifier: Best performing with 86% accuracy.
 
 ## Model Evaluation and Best Model
 The models were evaluated using metrics such as Accuracy, Precision, Recall, and F1-Score. 
 Additionally, AUC-ROC (Area Under the Receiver Operating Characteristic curve) was used to assess the models' ability to differentiate between the two classes (churn vs. no churn).
-Among the tested models, Gradient Boosting (specifically XGBoost or LightGBM) generally performed the best for this dataset. 
-These models handled the mixture of categorical and numerical variables effectively and showed strong performance in terms of both accuracy and AUC-ROC scores. 
-The fine-tuning of hyperparameters (such as learning rate, number of estimators, and max depth) further improved the model's performance.
+Based on the accuracy scores, LGBM Classifier emerged as the best model with an accuracy of 86%, outperforming the other models. Additionally, LGBM Classifier achieved high recall and precision:
+- Recall: 86%
+- Precision: 85.74%
+With its high accuracy, recall, and precision, the LGBM Classifier demonstrates the most robust performance, making it the optimal choice for predicting customer churn in this dataset.
 
 ## Feature Importance
 Key features identified as influential in predicting customer churn include:
